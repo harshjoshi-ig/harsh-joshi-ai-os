@@ -1,4 +1,4 @@
-import { User, GraduationCap, Briefcase, Target, Code2, Brain } from 'lucide-react';
+import { GraduationCap, Briefcase, Target, Code2, Brain } from 'lucide-react';
 import HoloCard from '@/components/HoloCard';
 import SectionHeader from '@/components/SectionHeader';
 import TechBadge from '@/components/TechBadge';
@@ -46,8 +46,13 @@ const About = () => {
               {/* Avatar */}
               <div className="relative w-32 h-32 mx-auto mb-6">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-secondary opacity-20 animate-pulse" />
-                <div className="absolute inset-2 rounded-full bg-card border-2 border-primary/50 flex items-center justify-center">
-                  <User className="w-16 h-16 text-primary" />
+                {/* Updated Image Container */}
+                <div className="absolute inset-2 rounded-full bg-card border-2 border-primary/50 flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="/profile.jpg" 
+                    alt="Harsh Joshi" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 {/* Status ring */}
                 <div className="absolute inset-0 rounded-full border-2 border-transparent border-t-primary animate-spin-slow" />
